@@ -1,0 +1,22 @@
+{% extends '_base.html' %}
+{% block content %}
+<div>
+    <h1>Link Shortener</h1>
+    {% for link in links %}
+    <div>
+        <div>
+            <p>{{link.name}}</p>
+            <p>Clicks: {{link.clicks}}</p>
+        </div>
+        <div>
+            <p>
+                <a href="{{link.url}}">{{link.url}}</a>
+            </p>
+            <p>
+                <a>Open /{{link.slug}}</a>
+            </p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content%}

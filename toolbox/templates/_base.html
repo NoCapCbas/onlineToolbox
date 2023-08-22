@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header class="">
+            <div class="">
+                <a href="{% url 'home' %}">
+                    <span>Link.ly</span>
+                </a>
+                <nav>
+                    <a href="{% url 'home' %}">All Links</a>
+                </nav>
+                <button>
+
+                </button>
+            </div>
+        </header>
+        <div>
+            {% block content %}
+            {% endblock content %}
+        </div>
+    </body>
+</html>
